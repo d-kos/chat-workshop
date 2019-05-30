@@ -31,7 +31,6 @@ public class LoginController {
         return login;
     }
 
-    // dati prazne implementacije s primjerom za message template koji šalje umjesto message null
     @EventListener
     public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) {
         String username = activeUsers.getUsername(event.getSessionId());
